@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Сравнение товаров</title>
+
+  <link rel="preload" href="fonts/montserrat-v18-latin_cyrillic-500.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-v18-latin_cyrillic-500.woff" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-v18-latin_cyrillic-600.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-v18-latin_cyrillic-600.woff" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-v18-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-v18-latin_cyrillic-700.woff" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-v18-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-v18-latin_cyrillic-regular.woff" as="font" type="font/woff2" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <h1 class="visually-hidden">Каталог</h1>
+  <section class="compare">
+    <div class="compare__title-wrapper">
+      <div class="container container--no-shadow">
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+            <li class="breadcrumbs__item">Сравнение товаров</li>
+          </ul>
+        </div>
+        <h2 class="compare__title">Сравнение товаров</h2>
+      </div>
+    </div>
+    <div class="compare__content-wrapper">
+      <div class="container compare__container">
+        <div class="compare__header-wrapper">
+          <div class="params">
+            <div class="params__header">
+              <span>Для категорий</span>
+              <button class="params__tooltip tooltip" aria-label="Показать подсказку">
+                <span class="tooltip__text">Вау! Это же подсказка на чистом CSS!</span>
+                <img class="tooltip__icon-question tooltip__icon-question" src="img/svg/icon-question.svg" width="24" height="24" alt="Иконка вопроса">
+              </button>
+
+            </div>
+            <select class="params__select" name="category">
+              <option value="smartphones">Смартфоны</option>
+            </select>
+            <input class="visually-hidden" type="radio" name="parameter" id="all" checked="">
+            <label for="all">Все характеристики</label>
+            <input class="visually-hidden" type="radio" name="parameter" id="diff">
+            <label for="diff">Показать только различия</label>
+          </div>
+          <div class="compare__items-wrapper">
+            <div class="compare-item">
+              <a class="compare-item__image-link" href="#">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/apple-iphone-11-64gb-gold-mobile@1x.webp 1x, img/apple-iphone-11-64gb-gold-mobile@2x.webp 2x">
+                  <source type="image/png" media="(max-width: 767px)" srcset="img/apple-iphone-11-64gb-gold-mobile@1x.png 1x, img/apple-iphone-11-64gb-gold-mobile@2x.png 2x">
+                  <source type="image/webp" srcset="img/apple-iphone-11-64gb-gold@1x.webp 1x, img/apple-iphone-11-64gb-gold@2x.webp 2x">
+                  <img class="compare-item__img" src="img/apple-iphone-11-64gb-gold@1x.png" srcset="img/apple-iphone-11-64gb-gold@2x.png 2x" width="108" height="147" alt="Apple iPhone 11 64 Gb (Gold)">
+                </picture>
+              </a>
+              <div class="compare-item__content">
+                <div class="compare-item__description">
+                  <p class="compare-item__category">Смартфоны</p>
+                  <a class="compare-item__title-link" href="#">
+                    <h3 class="compare-item__title">Apple iPhone 11 64&nbsp;Gb (Gold)</h3>
+                  </a>
+                  <p class="compare-item__price">
+                    <span class="compare-item__new-price">49 999 ₽</span>
+                    <span class="compare-item__old-price">60 999 ₽</span>
+                  </p>
+                </div>
+                <div class="compare-item__actions">
+                  <button class="compare-item__add-to-cart" type="button">
+                    <span>В корзину</span>
+                    <img src="img/svg/icon-cart.svg" width="20" height="20" alt="Добавить в корзину">
+                  </button>
+                  <button class="compare-item__buy" type="button">
+                    <img src="img/svg/icon-phone.svg" width="16" height="16" alt="Купить в 1 клик">
+                    <span>Купить в 1 клик</span>
+                  </button>
+                </div>
+                <button class="compare-item__close-button" type="button" aria-label="Убрать товар из сравнения">
+                  <img src="img/svg/icon-close.svg" width="16" height="16" alt="Закрыть">
+                </button>
+              </div>
+            </div>
+            <div class="compare-item">
+              <a class="compare-item__image-link" href="#">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/xiaomi-redmi-note-8-pro-blue-mobile@1x.webp 1x, img/xiaomi-redmi-note-8-pro-blue-mobile@2x.webp 2x">
+                  <source type="image/png" media="(max-width: 767px)" srcset="img/xiaomi-redmi-note-8-pro-blue-mobile@1x.png 1x, img/xiaomi-redmi-note-8-pro-blue-mobile@2x.png 2x">
+                  <source type="image/webp" srcset="img/xiaomi-redmi-note-8-pro-blue@1x.webp 1x, img/xiaomi-redmi-note-8-pro-blue@2x.webp 2x">
+                  <img class="compare-item__img" src="img/xiaomi-redmi-note-8-pro-blue@1x.png" srcset="img/xiaomi-redmi-note-8-pro-blue@2x.png 2x" width="117" height="147" alt="Xiaomi Redmi Note 8 Pro (blue)">
+                </picture>
+              </a>
+              <div class="compare-item__content">
+                <div class="compare-item__description">
+                  <p class="compare-item__category">Смартфоны</p>
+                  <a class="compare-item__title-link" href="#">
+                    <h3 class="compare-item__title">Xiaomi Redmi Note 8 Pro (blue)</h3>
+                  </a>
+                  <p class="compare-item__price">
+                    <span class="compare-item__new-price">16 700 ₽</span>
+                    <span class="compare-item__old-price">19 999 ₽</span>
+                  </p>
+                </div>
+                <div class="compare-item__actions">
+                  <button class="compare-item__add-to-cart" type="button">
+                    <span>В корзину</span>
+                    <img src="img/svg/icon-cart.svg" width="20" height="20" alt="Добавить в корзину">
+                  </button>
+                  <button class="compare-item__buy" type="button">
+                    <img src="img/svg/icon-phone.svg" width="16" height="16" alt="Купить в 1 клик">
+                    Купить в 1 клик
+                  </button>
+                </div>
+                <button class="compare-item__close-button" type="button" aria-label="Убрать товар из сравнения">
+                  <img src="img/svg/icon-close.svg" width="16" height="16" alt="Закрыть">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="table" class="table">
+          <div class="table__row">
+            <p class="table__title">
+              <span class="table__title-text">Бонусные рубли</span>
+            </p>
+            <div class="table__params">
+              <div class="table__param table__param--bonus">
+                <p class="table__bonus">+ 2 000 бонусов</p>
+              </div>
+              <div class="table__param table__param--bonus">
+                <p class="table__bonus">+ 1 000 бонусов</p>
+              </div>
+            </div>
+          </div>
+          <div class="table__row table__row--l-margin">
+            <p class="table__title">
+              <span class="table__title-text">Акции и специальные предложения</span>
+            </p>
+            <div class="table__params">
+              <p class="table__param">Рассрочка</p>
+              <p class="table__param">Скидка 50% на наушники</p>
+            </div>
+          </div>
+          <div class="table__row table__row--tablet-margin">
+            <p class="table__title">
+              <span class="table__title-text">Наличие</span>
+            </p>
+            <div class="table__params">
+              <p class="table__param">В наличии</p>
+              <p class="table__param">От 3 до 5 дней</p>
+            </div>
+          </div>
+          <div class="table__row table__row--sub">
+            <p class="table__group-title">
+              <span class="table__title-text">Основные</span>
+            </p>
+            <div class="table__sub">
+              <div class="table__sub-row">
+                <p class="table__sub-title">
+                  <span>Операционная система</span>
+                  <span>Операционная система</span>
+                </p>
+                <div class="table__sub-params">
+                  <p class="table__sub-param">iOS 13</p>
+                  <p class="table__sub-param">iOS 13</p>
+                </div>
+              </div>
+              <div class="table__sub-row">
+                <p class="table__sub-title">
+                  <span>Цвет</span>
+                  <span>Цвет</span>
+                </p>
+                <div class="table__sub-params">
+                  <p class="table__sub-param">золотой</p>
+                  <p class="table__sub-param">черный</p>
+                </div>
+              </div>
+              <div class="table__sub-row">
+                <p class="table__sub-title">
+                  <span>Год выпуска</span>
+                  <span>Год выпуска</span>
+                </p>
+                <div class="table__sub-params">
+                  <p class="table__sub-param">2019</p>
+                  <p class="table__sub-param">2019</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="table__row table__row--sub">
+            <p class="table__group-title">
+              <span class="table__title-text">Процессор</span>
+            </p>
+            <div class="table__sub">
+              <div class="table__sub-row table__sub-row--manufacturer">
+                <p class="table__sub-title">
+                  <span>Производитель</span>
+                  <span>Производитель</span>
+                </p>
+                <div class="table__sub-params">
+                  <p class="table__sub-param">Apple</p>
+                  <p class="table__sub-param">Apple</p>
+                </div>
+              </div>
+              <div class="table__sub-row">
+                <p class="table__sub-title">
+                  <span>Тип</span>
+                  <span>Тип</span>
+                </p>
+                <div class="table__sub-params">
+                  <p class="table__sub-param">A13 Bionic</p>
+                  <p class="table__sub-param">A13 Bionic</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="table__row table__row--sub">
+            <p class="table__group-title">
+              <span class="table__title-text">Экран</span>
+            </p>
+            <div class="table__sub table__sub--display">
+              <div class="table__sub-row">
+                <p class="table__sub-title">
+                  <span>Диагональ (дюймов)</span>
+                  <span>Диагональ (дюймов)</span>
+                </p>
+                <div class="table__sub-params">
+                  <p class="table__sub-param">5,8</p>
+                  <p class="table__sub-param">5,8</p>
+                </div>
+              </div>
+              <div class="table__sub-row">
+                <p class="table__sub-title">
+                  <span>Тип экрана</span>
+                  <span>Тип экрана</span>
+                </p>
+                <div class="table__sub-params">
+                  <p class="table__sub-param">Super Retina XDR</p>
+                  <p class="table__sub-param">Super Retina XDR</p>
+                </div>
+              </div>
+              <div class="table__sub-row">
+                <p class="table__sub-title">
+                  <span>Разрешение экрана</span>
+                  <span>Разрешение экрана</span>
+                </p>
+                <div class="table__sub-params">
+                  <p class="table__sub-param">2436×1125 точек</p>
+                  <p class="table__sub-param">2436×1125 точек</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="table__row table__row--sub table__row--camera">
+            <p class="table__group-title">
+              <span class="table__title-text">Камера</span>
+            </p>
+            <div class="table__sub table__sub--camera">
+              <div class="table__sub-row">
+                <p class="table__sub-title">
+                  <span>Количество основных камер</span>
+                  <span>Количество основных камер</span>
+                </p>
+                <div class="table__sub-params">
+                  <p class="table__sub-param">3</p>
+                  <p class="table__sub-param">3</p>
+                </div>
+              </div>
+              <div class="table__sub-row">
+                <p class="table__sub-title">
+                  <span>Разрешения основных камер</span>
+                  <span>Разрешения основных камер</span>
+                </p>
+                <div class="table__sub-params">
+                  <p class="table__sub-param">12 МПикс, 12 МПикс, 12 МПикс</p>
+                  <p class="table__sub-param">12 МПикс, 12 МПикс, 12 МПикс</p>
+                </div>
+              </div>
+              <div class="table__sub-row table__sub-row--s-margin">
+                <p class="table__sub-title">
+                  <span>Функции основной камеры</span>
+                  <span>Функции основной камеры</span>
+                </p>
+                <div class="table__sub-params">
+                  <p class="table__sub-param">Режим «Портрет», портретное освещение, оптическая стабилизация, вспышка
+                    True
+                    Tone, Focus Pixels
+                  </p>
+                  <p class="table__sub-param">Режим «Портрет», портретное освещение, оптическая стабилизация, вспышка
+                    True
+                    Tone, Focus Pixels
+                  </p>
+                </div>
+              </div>
+              <div class="table__sub-row">
+                <p class="table__sub-title">
+                  <span>Фронтальная камера</span>
+                  <span>Фронтальная камера</span>
+                </p>
+                <div class="table__sub-params">
+                  <p class="table__sub-param">есть</p>
+                  <p class="table__sub-param">есть</p>
+                </div>
+              </div>
+              <div class="table__sub-row table__sub-row--resolution">
+                <p class="table__sub-title">
+                  <span>Разрешение фронтальной камеры</span>
+                  <span>Разрешение фронтальной камеры</span>
+                </p>
+                <div class="table__sub-params">
+                  <p class="table__sub-param">12 Мпикс</p>
+                  <p class="table__sub-param">12 Мпикс</p>
+                </div>
+              </div>
+              <div class="table__sub-row">
+                <p class="table__sub-title">
+                  <span>Вспышка</span>
+                  <span>Вспышка</span>
+                </p>
+                <div class="table__sub-params">
+                  <p class="table__sub-param">есть, светодиодная</p>
+                  <p class="table__sub-param">есть, светодиодная</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="table__row table__row--sub">
+            <p class="table__group-title">
+              <span class="table__title-text">Память</span>
+            </p>
+            <div class="table__sub">
+              <div class="table__sub-row">
+                <p class="table__sub-title">
+                  <span>Встроенная память</span>
+                  <span>Встроенная память</span>
+                </p>
+                <div class="table__sub-params">
+                  <p class="table__sub-param">64 Гб</p>
+                  <p class="table__sub-param">64 Гб</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="table__row table__row--sub table__row--power">
+            <p class="table__group-title">
+              <span class="table__title-text">Питание</span>
+            </p>
+            <div class="table__sub table__sub--power">
+              <div class="table__sub-row">
+                <p class="table__sub-title">
+                  <span>Тип разъема для зарядки</span>
+                  <span>Тип разъема для зарядки</span>
+                </p>
+                <div class="table__sub-params">
+                  <p class="table__sub-param">Lightning</p>
+                  <p class="table__sub-param">Lightning</p>
+                </div>
+              </div>
+              <div class="table__sub-row">
+                <p class="table__sub-title">
+                  <span>Функция быстрой зарядки</span>
+                  <span>Функция быстрой зарядки</span>
+                </p>
+                <div class="table__sub-params">
+                  <p class="table__sub-param">есть</p>
+                  <p class="table__sub-param">есть</p>
+                </div>
+              </div>
+              <div class="table__sub-row">
+                <p class="table__sub-title">
+                  <span>Функция беспроводной зарядки</span>
+                  <span>Функция беспроводной зарядки</span>
+                </p>
+                <div class="table__sub-params">
+                  <p class="table__sub-param">есть</p>
+                  <p class="table__sub-param">есть</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="table__row table__row--sub">
+            <p class="table__group-title table__group-title--connect">
+              <span class="table__title-text">Подключение</span>
+            </p>
+            <div class="table__sub table__sub--connect">
+              <div class="table__sub-row">
+                <div class="table__sub-title">
+                  <span>Разъем Lightning 8 Pin</span>
+                  <div class="table__tooltip-wrapper">
+                    <button class="table__tooltip tooltip" aria-label="Показать подсказку">
+                      <span class="tooltip__text"><b>4500 мАч</b> - это примерно 30 часов активного использования
+                        устройства</span>
+                      <img class="table___icon-question tooltip__icon-question" src="img/svg/icon-question.svg" width="24" height="24" alt="Иконка вопроса">
+                    </button>
+                  </div>
+                  <span>Разъем Lightning 8 Pin</span>
+                </div>
+                <div class="table__sub-params">
+                  <p class="table__sub-param">есть</p>
+                  <p class="table__sub-param">есть</p>
+                </div>
+              </div>
+              <div class="table__sub-row">
+                <p class="table__sub-title">
+                  <span>Разъем для наушников</span>
+                  <span>Разъем для наушников</span>
+                </p>
+                <div class="table__sub-params">
+                  <p class="table__sub-param">Lightning</p>
+                  <p class="table__sub-param">Lightning</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="compare__summary">Смартфон Apple iPhone 11 64GB Black (MWLT2RU/A) и Смартфон Apple iPhone SE 2020
+          128GB Black (MXD02RU/A) -
+          сравнение основных характеристик моделей</p>
+        <div class="compare__controls">
+          <button class="compare__reset" type="reset">Очистить список</button>
+          <button class="compare__to-catalog" type="button">
+            <span>Назад к товарам</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
